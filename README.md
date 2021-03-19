@@ -2,9 +2,9 @@
 Simple App of  Flickr  Using VIPER architecture.
 
 # Screen Shots
-![IMG_0247](https://user-images.githubusercontent.com/8495178/111801272-765ab600-88d5-11eb-9fa8-d1d07a122c5b.PNG)
-![IMG_0244](https://user-images.githubusercontent.com/8495178/111801311-81154b00-88d5-11eb-8767-829da43eb267.jpg)
-![IMG_0243](https://user-images.githubusercontent.com/8495178/111801341-883c5900-88d5-11eb-8d53-a9e4dfb56f19.jpg)
+
+<img src="https://user-images.githubusercontent.com/8495178/111803634-e36f4b00-88d7-11eb-9ce0-0efa2afd1c33.jpg?raw=true" width=300px/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://user-images.githubusercontent.com/8495178/111803642-e66a3b80-88d7-11eb-949d-44ca814cc9ac.jpgg?raw=true" width=300px/>
+
 
 # Features
 - Tabbar of 2 screen (photos and groups)
@@ -29,14 +29,11 @@ Simple App of  Flickr  Using VIPER architecture.
 ![viper](https://user-images.githubusercontent.com/8495178/111802099-4bbd2d00-88d6-11eb-9d1f-665765a02325.png)
 
 # Plugins used
-[https://github.com/Alamofire/Alamofire]
 
-[https://github.com/SDWebImage/SDWebImage]
-
-[https://docs.mongodb.com/realm-legacy/docs/swift/latest/]
-
-[https://github.com/SVProgressHUD/SVProgressHUD]
-
+* [Alamofire](https://github.com/alamofire/alamofire)
+* [SDWebImage](https://github.com/SDWebImage/SDWebImage)
+* [Realm](https://docs.mongodb.com/realm-legacy/docs/swift/latest/)
+* [SVProgressHUD](https://github.com/SVProgressHUD/SVProgressHUD)
 
 
 
