@@ -1,12 +1,9 @@
-![IMG_0247](https://user-images.githubusercontent.com/8495178/111804718-00584e00-88d9-11eb-9d98-a42cd0a4fb8d.PNG)
-![IMG_0244](https://user-images.githubusercontent.com/8495178/111804763-09e1b600-88d9-11eb-9ee0-653160368ca4.jpg)
-![IMG_0243](https://user-images.githubusercontent.com/8495178/111804784-0fd79700-88d9-11eb-8ccb-26cc7860393d.jpg)
+
 # Flicker Demo
 Simple App of  Flickr  Using VIPER architecture.
 
 # Screen Shots
-
-<img src="https://user-images.githubusercontent.com/8495178/111803634-e36f4b00-88d7-11eb-9ce0-0efa2afd1c33.jpg?raw=true" width=300px/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://user-images.githubusercontent.com/8495178/111803642-e66a3b80-88d7-11eb-949d-44ca814cc9ac.jpgg?raw=true" width=300px/>
+<img src="https://user-images.githubusercontent.com/8495178/111804718-00584e00-88d9-11eb-9d98-a42cd0a4fb8d.PNG?raw=true" width=300px/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://user-images.githubusercontent.com/8495178/111804763-09e1b600-88d9-11eb-9ee0-653160368ca4.jpg?raw=true" width=300px/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://user-images.githubusercontent.com/8495178/111804784-0fd79700-88d9-11eb-8ccb-26cc7860393d.jpg?raw=true" width=300px/>
 
 
 # Features
