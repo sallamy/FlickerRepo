@@ -8,6 +8,7 @@
 import UIKit
 
 protocol displayableTopicModelProtocol: GroupInfoProtocol {
+    var topicId: String { get }
     var topicSubject: String { get }
     var authorName: String { get }
     var countOfReplies: String { get }
@@ -55,6 +56,10 @@ struct TopicModelRoot<D: Decodable>: Decodable {
 }
 
 extension TopicModel: displayableTopicModelProtocol {
+    var topicId: String {
+        self.id
+    }
+    
     var topicSubject: String {
         return subject
     }

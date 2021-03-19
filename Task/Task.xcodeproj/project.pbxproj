@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		EF3F924EA2FB522CDB1A04B7 /* Pods_Task.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F221F0B4043B0337C1B1AF6 /* Pods_Task.framework */; };
+		FFC1ED3226050492006772E9 /* GroupInfoModelRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC1ED3126050492006772E9 /* GroupInfoModelRealm.swift */; };
+		FFC1ED37260504A0006772E9 /* TopicModelRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC1ED36260504A0006772E9 /* TopicModelRealm.swift */; };
+		FFC1ED3C260504B0006772E9 /* ReplyModelRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC1ED3B260504B0006772E9 /* ReplyModelRealm.swift */; };
 		FFE222162600BAC90092705B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE222152600BAC90092705B /* AppDelegate.swift */; };
 		FFE2221D2600BAC90092705B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFE2221B2600BAC90092705B /* Main.storyboard */; };
 		FFE2221F2600BACA0092705B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFE2221E2600BACA0092705B /* Assets.xcassets */; };
@@ -63,6 +66,9 @@
 		151C6B8E66D1939D2675B121 /* Pods-Task.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Task.debug.xcconfig"; path = "Target Support Files/Pods-Task/Pods-Task.debug.xcconfig"; sourceTree = "<group>"; };
 		6F221F0B4043B0337C1B1AF6 /* Pods_Task.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Task.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F79C8CCA2DDDE58F2DB47FE0 /* Pods-Task.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Task.release.xcconfig"; path = "Target Support Files/Pods-Task/Pods-Task.release.xcconfig"; sourceTree = "<group>"; };
+		FFC1ED3126050492006772E9 /* GroupInfoModelRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupInfoModelRealm.swift; sourceTree = "<group>"; };
+		FFC1ED36260504A0006772E9 /* TopicModelRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicModelRealm.swift; sourceTree = "<group>"; };
+		FFC1ED3B260504B0006772E9 /* ReplyModelRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplyModelRealm.swift; sourceTree = "<group>"; };
 		FFE222122600BAC90092705B /* Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Task.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFE222152600BAC90092705B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFE2221C2600BAC90092705B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -396,6 +402,9 @@
 				FFF024802603FB6200966FA8 /* GroupInfoModel.swift */,
 				FFF024AC2604030A00966FA8 /* TopicModel.swift */,
 				FFF024BD26040E1F00966FA8 /* ReplyModel.swift */,
+				FFC1ED3126050492006772E9 /* GroupInfoModelRealm.swift */,
+				FFC1ED36260504A0006772E9 /* TopicModelRealm.swift */,
+				FFC1ED3B260504B0006772E9 /* ReplyModelRealm.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -621,15 +630,18 @@
 				FFE22289260108D10092705B /* PhotoProtocols.swift in Sources */,
 				FFF024B326040CA100966FA8 /* DateExtension.swift in Sources */,
 				FFE222B4260124460092705B /* TabbarViewController.swift in Sources */,
+				FFC1ED3226050492006772E9 /* GroupInfoModelRealm.swift in Sources */,
 				FFF0245A2603733D00966FA8 /* GroupListViewController.swift in Sources */,
 				FFF024AD2604030A00966FA8 /* TopicModel.swift in Sources */,
 				FFF024642603851500966FA8 /* GroupModel.swift in Sources */,
+				FFC1ED37260504A0006772E9 /* TopicModelRealm.swift in Sources */,
 				FFF0248A2603FB6200966FA8 /* GroupInfoViewController.swift in Sources */,
 				FFF024692603B30000966FA8 /* GroupModelRealm.swift in Sources */,
 				FFE22284260108420092705B /* PhotoInteractor.swift in Sources */,
 				FFE222A826011F490092705B /* PhotosRouter.swift in Sources */,
 				FFE222A326011D610092705B /* PhotosViewController.swift in Sources */,
 				FFF024BE26040E1F00966FA8 /* ReplyModel.swift in Sources */,
+				FFC1ED3C260504B0006772E9 /* ReplyModelRealm.swift in Sources */,
 				FFF02455260372B800966FA8 /* GroupListProtocols.swift in Sources */,
 				FFF024312603586300966FA8 /* DataBaseHandler.swift in Sources */,
 				FFF0245F2603846F00966FA8 /* GroupsRouter.swift in Sources */,

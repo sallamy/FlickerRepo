@@ -10,6 +10,77 @@ import RealmSwift
 
 class DataBaseHandler {
     
+    class func saveGroupInfo(_ groupInfo: GroupInfoModel) {
+        let realm = try! Realm()
+        self.deleteOldGroupInfo(groupId: groupInfo.id)
+        try! realm.write() { // 2
+            let groupInfoRealm = GroupInfoModelRealm(groupInfo: groupInfo)
+            realm.add(groupInfoRealm)
+        }
+    }
+    
+    class func deleteOldGroupInfo(groupId: String) {
+        if let group = self.getGroupInfo(with: groupId) {
+            let realm = try! Realm()
+            try! realm.write() { // 2
+                realm.delete(group)
+            }
+        }
+    }
+    
+    class func saveTopic(_ topic: TopicModel, groupId: String) {
+        let realm = try! Realm()
+        deleteOldTopic(groupId: groupId)
+        try! realm.write() { // 2
+            let topicRealm = TopicModelRealm(topic: topic, groupId: groupId)
+            realm.add(topicRealm)
+        }
+    }
+    
+    class func deleteOldTopic(groupId: String) {
+        if let topic = self.getTopic(with: groupId) {
+            let realm = try! Realm()
+            try! realm.write() { // 2
+                realm.delete(topic)
+            }
+        }
+    }
+    
+    class func saveReplies(_ list: [ReplyModel], topicId:String) {
+        let realm = try! Realm()
+        deleteOldReplies(topicId: topicId)
+        try! realm.write() { // 2
+            for reply in list { // 4
+                let replyRealm = ReplyModelRealm(reply: reply, topicId: topicId)
+                realm.add(replyRealm)
+            }
+        }
+    }
+    
+    class func deleteOldReplies(topicId: String) {
+        if let replies = self.getReply(with: topicId) {
+            let realm = try! Realm()
+            try! realm.write() { // 2
+                realm.delete(replies)
+            }
+        }
+    }
+    
+    class func getGroupInfo(with _id: String) -> GroupInfoModelRealm? {
+        let realm = try! Realm()
+        return realm.objects(GroupInfoModelRealm.self).filter(NSPredicate(format: "id == %@", _id)).first
+    }
+    
+    class func getTopic(with group_id: String) -> TopicModelRealm? {
+        let realm = try! Realm()
+        return realm.objects(TopicModelRealm.self).filter(NSPredicate(format: "groupId == %@", group_id)).first
+    }
+    
+    class func getReply(with topic_id: String) -> [ReplyModelRealm]? {
+        let realm = try! Realm()
+        return realm.objects(ReplyModelRealm.self).filter(NSPredicate(format: "topicId == %@", topic_id)).toArray(ofType: ReplyModelRealm.self)
+    }
+    
     class func savePhotos(_ list: [Photo]) {
         let realm = try! Realm()
         try! realm.write() { // 2

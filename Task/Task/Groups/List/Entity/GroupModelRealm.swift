@@ -32,7 +32,7 @@ extension GroupModelRealm: displayableGroupModelProtocol {
     
     var iconUrl: String {
         if  iconserver != "0" {
-            return "http://farm\(iconfarm).staticflickr.com/\(iconserver)/buddyicons/\(id).jpg"
+            return "https://farm\(iconfarm).staticflickr.com/\(iconserver)/buddyicons/\(id).jpg"
         } else {
             return defaultIconURL
         }

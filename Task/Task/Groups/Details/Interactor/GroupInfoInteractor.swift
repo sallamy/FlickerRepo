@@ -54,9 +54,11 @@ class GroupInfoInteractor: GroupInfoPresenterToGroupInfoInteractorProtocol  {
                     switch  response.result {
                     case  .success(let root):
                         self?.groupInfo = root.groups
+                        DataBaseHandler.saveGroupInfo(root.groups)
                         self?.serialGroup.leave()
                         break
-                    case .failure(let error):
+                    case .failure(let _):
+                        self?.groupInfo = DataBaseHandler.getGroupInfo(with: self?.groupId ?? "")
                         self?.serialGroup.leave()
                         break
                     }
@@ -84,6 +86,7 @@ class GroupInfoInteractor: GroupInfoPresenterToGroupInfoInteractorProtocol  {
                         if let topic =  root.topics.topic?.first {
                             self?.topic = topic
                             self?.topicId = topic.id
+                            DataBaseHandler.saveTopic(topic, groupId: self?.groupId ?? "")
                             self?.fetchReplies()
                         } else {
                             self?.serialGroup.leave()
@@ -91,7 +94,9 @@ class GroupInfoInteractor: GroupInfoPresenterToGroupInfoInteractorProtocol  {
                         
                         break
                     case .failure(let error):
-                        self?.serialGroup.leave()
+                        self?.topic = DataBaseHandler.getTopic(with: self?.groupId ?? "")
+                        self?.topicId = self?.topic?.topicId
+                        self?.fetchReplies()
                         break
                     }
                     
@@ -118,12 +123,14 @@ class GroupInfoInteractor: GroupInfoPresenterToGroupInfoInteractorProtocol  {
                     case  .success(let root):
                         if let replies =  root.replies.reply {
                             self?.replies = replies
+                            DataBaseHandler.saveReplies(replies, topicId: self?.topicId ?? "")
                             self?.serialGroup.leave()
                         } else {
                             self?.serialGroup.leave()
                         }
                         break
                     case .failure(let error):
+                        self?.replies = DataBaseHandler.getReply(with: self?.topicId ?? "")
                         self?.serialGroup.leave()
                         break
                     }

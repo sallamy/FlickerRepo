@@ -42,7 +42,7 @@ struct Content:Decodable {
     private enum CodingKeys: String, CodingKey {
         case content = "_content"
     }
-       
+    
 }
 
 struct GroupInfoRoot<T: Decodable>: Decodable {
