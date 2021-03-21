@@ -1,6 +1,4 @@
-SVProgressHUD.debug.xcconfig
-# CocoaPods
-Pods
+
 
 # OS X
 .DS_Store
